@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form action="https://formspree.io/f/xdkkpbeo" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>REGISTRATION FORM</legend>
+            
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>    
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>  
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password" required>   
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Enter your Age" min="0" required>   
+
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter your Contact Number" required>   
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>  
+
+            <label for="passed_out">Passed Out Year</label>
+            <input type="number" id="passed_out" name="passed_out" placeholder="Enter your Passed Out Year" min="1900" max="2099" required>   
+
+            <label>Gender</label> 
+            <input type="radio" id="male" value="Male" name="gender" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" value="Female" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="others" value="Others" name="gender">
+            <label for="others">Others</label>
+
+            <label>Programming Languages Known</label> 
+            <input type="checkbox" id="python" value="Python" name="languages">
+            <label for="python">Python</label>
+            <input type="checkbox" id="java" value="Java" name="languages">
+            <label for="java">Java</label>
+            <input type="checkbox" id="cpp" value="C++" name="languages">
+            <label for="cpp">C++</label>
+
+            <label for="fav_color">Select Your Favorite Color</label> 
+            <input type="color" id="fav_color" name="fav_color"> 
+
+            <label for="linkedin">LinkedIn Profile Link</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn profile link"> 
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
